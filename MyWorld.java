@@ -8,10 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
-    /**
-     * Constructor for objects of class MyWorld.
-     * 
-     */
     public MyWorld()
     {    
         super(600, 600, 1); 
@@ -29,11 +25,14 @@ public class MyWorld extends World
     }
     public void act(){
         if(Greenfoot.getRandomNumber(100)<1){
-            addObject(new virus(), Greenfoot.getRandomNumber(200) + 200, 0);
+            addObject(new virus(), Greenfoot.getRandomNumber(150) + 200, 0);
         }
         if(Greenfoot.getRandomNumber(10)<2){
             addObject(new buildingone(), Greenfoot.getRandomNumber(90), 0);
             addObject(new buildingone(), Greenfoot.getRandomNumber(90) + 500, 0);        
+        }
+        if(Greenfoot.getRandomNumber(400)<1){
+            addObject(new vaccine(), Greenfoot.getRandomNumber(200) + 200, 0);
         }
     }
 }

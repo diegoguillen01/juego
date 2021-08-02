@@ -8,4 +8,6 @@ comment3.params=
 comment3.target=void\ checkKey()
 comment4.params=
 comment4.target=void\ end()
-numComments=5
+comment5.params=
+comment5.target=void\ addScore()
+numComments=6
